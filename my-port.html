@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmud Moon</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+    * {
+        box-sizing: border-box;
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    /*Nav-bar design start*/
+
+    .nav-bar {
+        width: 100%;
+        background-color: #40868b;
+        padding: 10px 50px 0px;
+    }
+
+    .nav-bar img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        color: white;
+        font-size: 1.9rem;
+    }
+
+    a {
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-menu a {
+        margin: 20px 0px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    .nav-menu a:hover {
+        background-color: gray;
+    }
+
+    .navlogo {
+        text-align: left;
+    }
+
+    .nav-heading {
+        text-align: right;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+
+    @media only screen and (max-width: 1085px) {
+        .name {
+            font-size: 1.7rem;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        .navlogo {
+            text-align: center;
+        }
+
+        .nav-heading {
+            text-align: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            margin: 7px 0px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #0c6168;
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-bar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .navlogo.col-2 {
+            margin-bottom: -50px;
+        }
+    }
+
+    /*Nav-bar design end*/
+    /*Profile design start*/
+    .line-br {
+        display: block;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .profile {
+        padding: 130px 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .weatherr-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    .top-weather-icon {
+        position: absolute;
+        right: 100px;
+        top: 20px;
+        transition: width 2s, transform 2s;
+    }
+
+    .top-weather-icon:hover {
+        width: 140px;
+        transform: rotate(-360deg);
+    }
+
+    .bottom-weather-icon {
+        position: absolute;
+        bottom: 10px;
+        left: 100px;
+        transition: width 2s, transform 2s;
+    }
+
+    .bottom-weather-icon:hover {
+        width: 140px;
+        transform: rotate(360deg);
+    }
+
+    .profile-desc h1 {
+        font-size: 3rem;
+        color: black;
+        font-family: 'Satisfy', cursive;
+    }
+
+    .profile-desc p {
+        color: gray;
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .profile::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .weatherr-img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .profile-desc p {
+            margin: 0 auto 20px auto;
+            width: 90%;
+        }
+
+        .top-weather-icon {
+            right: 60px;
+            top: 10px;
+            transition: width 2s, transform 2s;
+        }
+
+        .top-weather-icon:hover {
+            width: 100px;
+            transform: rotate(-360deg);
+        }
+
+        .bottom-weather-icon {
+            bottom: 10px;
+            left: 60px;
+            transition: width 2s, transform 2s;
+        }
+
+        .bottom-weather-icon:hover {
+            width: 100px;
+            transform: rotate(360deg);
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .profile-desc h1 {
+            font-size: 2rem;
+        }
+
+        .weatherr-img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .top-weather-icon {
+            right: 30px;
+            top: 15px;
+        }
+
+        .bottom-weather-icon {
+            bottom: 85px;
+            left: 30px;
+        }
+
+        h1.bio {
+            margin-top: -50px;
+        }
+    }
+
+    /*Profile design end*/
+    /*About me starts*/
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .about-me {
+        background-color: #39a4ac;
+        color: white;
+        padding: 1% 7%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .allDot {
+        text-align: center;
+        width: 70px;
+        margin: 20px auto;
+    }
+
+    .allDot span {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: inline-block;
+        /* margin: 0px 5px; */
+    }
+
+    .aboutme-img {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .aboutme-img>img {
+        border: 5px solid white;
+        width: 250px;
+        height: 270px;
+        border-radius: 50%;
+    }
+
+    .about-me a {
+        font-size: 1.2rem;
+    }
+
+    .about-me p {
+        text-align: left;
+    }
+
+    button.cv-btn {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        padding: 15px;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .about-me {
+            padding: 1% 7%;
+            text-align: center;
+        }
+
+        .aboutme-img {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .aboutme-img>img {
+            width: 200px;
+            height: 220px;
+        }
+
+        .about-me p {
+            text-align: center;
+        }
+    }
+
+    /*About me ends*/
+
+    /*Professional experience start*/
+    .professional-exp {
+        padding: 1% 0%;
+    }
+
+    .professional-exp .card {
+        background-color: #a39e9e;
+        border-radius: 5px;
+        padding: 10px;
+        transition: 0.3s;
+        height: 750px;
+    }
+
+    .professional-exp .card:hover {
+        box-shadow: 0 4px 8px 5px black;
+    }
+
+    .card-icon {
+        text-align: center;
+    }
+
+    .card-title h2 {
+        background-color: #616161;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .professional-exp img {
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .professional-exp::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .rounded-img {
+        border: 5px solid white;
+        border-radius: 50%;
+        padding: 10px;
+
+    }
+
+    /*skills container start*/
+    .skills-container {
+        padding-right: 45px;
+    }
+
+    .skills-container li {
+        list-style: none;
+        font-weight: bolder;
+        margin: 60px -10px;
+        position: relative;
+    }
+
+    .skills-container li::before {
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background-color: #d0ccde;
+        border-radius: 1000px;
+    }
+
+    .skills-container li::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 15px;
+        background-color: #060d46cf;
+        top: calc(100% + 5px);
+        left: 0;
+        border-radius: 100px;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        /*animation-iteration-count: infinite;*/
+        /*animation-direction:forward;*/
+        animation-fill-mode: forwards;
+    }
+
+    .skills-container li.html::after {
+        animation-name: html;
+    }
+
+    @keyframes html {
+        to {
+            width: 90%;
+        }
+    }
+
+    .skills-container li.css::after {
+        animation-name: css;
+    }
+
+    @keyframes css {
+        to {
+            width: 80%;
+        }
+    }
+
+    .skills-container li.bts::after {
+        animation-name: bts;
+    }
+
+    @keyframes bts {
+        to {
+            width: 65%;
+        }
+    }
+
+    .skills-container li.js::after {
+        animation-name: js;
+    }
+
+    @keyframes js {
+        to {
+            width: 70%;
+        }
+    }
+
+    .skills-container li.jquery::after {
+        animation-name: jquery;
+    }
+
+    @keyframes jquery {
+        to {
+            width: 60%;
+        }
+    }
+
+    .professional-exp a {
+        color: blue;
+    }
+
+    /*skills container end*/
+
+    /*Professional experience end*/
+    /*contact me page design start*/
+    .contact-page {
+        padding: 1% 7%;
+        background-color: #39a4ac;
+        color: white;
+    }
+
+    .contact-me {
+        text-align: center;
+    }
+
+    .contact-me input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        resize: none;
+    }
+
+    .contact-me button {
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        padding: 15px;
+        margin: 10px;
+        width: 100px;
+        color: white;
+    }
+
+    .div-clear {
+        overflow: hidden;
+    }
+
+    @media only screen and (min-width: 992px) {
+        .achievment {
+            padding-right: 50px;
+        }
+
+        .contact-links {
+            position: relative;
+        }
+
+        .media-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 150px;
+        }
+    }
+
+    .contact-links {
+        text-align: center;
+    }
+
+    button.btn {
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 30px;
+        padding: 5px;
+        margin: 10px;
+        width: 49px;
+        background-color: white;
+    }
+
+    button.btn:hover {
+        background-color: yellow;
+    }
+
+    /*contact me page design end*/
+    /*footer design starts*/
+    .footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .footer-menu a {
+        background-color: transparent;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .footer-menu a:hover {
+        background-color: #48474757;
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .footer-menu a {
+            background-color: #5d494957;
+            margin: 15px 0px;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bolder;
+            display: block;
+        }
+        .footer-menu a:hover{
+            background-color: #dadada;
+            color: black;
+            cursor: pointer;
+        }
+    }
+
+    /*footer design ends*/
+    </style>
+</head>
+
+<body>
+    <!-- Nav-Bar start -->
+    <div class="nav-bar div-clear">
+        <div class="navlogo col-2">
+            <img src="A.png" alt="logo">
+        </div>
+        <div class="nav-heading col-4">
+            <h1 class="name">Aothy Mahamud Moon</h1>
+        </div>
+        <div class="nav-menu col-6">
+            <a href="#profile">Home</a>
+            <a href="#about-me">About Me</a>
+            <a href="#skill">Skill</a>
+            <a href="#contact-me">Contact Me</a>
+        </div>
+    </div>
+    <!-- Nav-Bar end -->
+    <!-- Profile starts -->
+    <div class="profile" id="profile">
+        <img class="weatherr-img top-weather-icon" src="weatherr.png" alt="weather-icon">
+        <div class="profile-desc">
+            <h1 class="bio">
+                I am a CSE student <span class="line-br"></span>&<span class="line-br"></span>Web Designer
+            </h1>
+            <p>Hi! My name is Aothy Mahamud Moon. Welcome to my personal page that I've designed to showcase my skills and expertise that I've accumulated over the year</p>
+        </div>
+        <img class="weatherr-img bottom-weather-icon" src="weatherr.png" alt="weather-icon">
+    </div>
+    <!-- Profile ends -->
+    <!-- About me section start -->
+    <div class="about-me div-clear" id="about-me">
+        <h2>ABOUT ME</h2>
+        <div class="allDot">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="aboutme-img col-6">
+            <img src="portfolio.jpeg" alt="Mahmud Moon Image">
+        </div>
+        <div class="aboutme-desc col-6">
+            <p>I like to call myself "a passionate CSE student & Web Designer".</p>
+            <p>I made lot of web page on different styles.My first priority is making the web page more interesting and give you more attractive web page. </p>
+            <hr class="aboutme-hr">
+            <p>Name: Aothy Mahamud Moon</p>
+            <hr class="aboutme-hr">
+            <p>Address: Pangsha,Rajbari</p>
+            <hr class="aboutme-hr">
+            <p>Email:<a href="mailto:mmoon8745@gmail.com"> mmoon8745@gmail.com</a></p>
+            <hr class="aboutme-hr">
+            <p>Phone:<a href="tel:+88016400578734"> +8801640057834</a></p>
+            <hr class="aboutme-hr">
+            <p>Website:<a href="https://moon1378.blogspot.com/" target="blank"> https://moon1378.blogspot.com/</a></p>
+            <hr class="aboutme-hr">
+            <p>
+                <a href="">
+                    <button class="cv-btn">Download CV</button>
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- About me section end -->
+    <!-- Professional experience start -->
+    <div class="professional-exp div-clear" id="skill">
+        <div class="work-exp col-4">
+            <div class="card">
+                <div class="card-icon">
+                    <img class="rounded-img" src="work-exp.png" alt="work-exp image">
+                </div>
+                <div class="card-title">
+                    <h2>WORK EXPERIENCE</h2>
+                </div>
+                <div class="card-desc">
+                    <ol>
+                        <li>
+                            <strong>Web Designer</strong><span class="line-br"></span>
+                            2020-2021<span class="line-br"></span>
+                            W3school<span class="line-br"></span>
+                            Online Study Platform<span class="line-br"></span>
+                            <a href="https://www.w3schools.com/" target="blank">https://www.w3schools.com/</a><span class="line-br"></span>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Web Designer at Fiverr</strong><span class="line-br"></span>
+                            2020-2021<span class="line-br"></span>
+                            Fiverr<span class="line-br"></span>
+                            Online marketing Platform<span class="line-br"></span>
+                            <a href="https://www.fiverr.com/" target="blank">https://www.fiverr.com/</a><span class="line-br"></span>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Web Designer</strong><span class="line-br"></span>
+                            2020-2021<span class="line-br"></span>
+                            W3school<span class="line-br"></span>
+                            Online Study Platform<span class="line-br"></span>
+                            <a href="https://www.w3schools.com/" target="blank">https://www.w3schools.com/</a><span class="line-br"></span>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Digital Marketer</strong><span class="line-br"></span>
+                            2020-2021<span class="line-br"></span>
+                            LEDP<span class="line-br"></span>
+                            Online Study Platform<span class="line-br"></span>
+                            <a href="http://ledp.ictd.gov.bd/" target="blank">http://ledp.ictd.gov.bd/</a><span class="line-br"></span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="edu col-4">
+            <div class="card">
+                <div class="card-icon">
+                    <img class="rounded-img" src="edu.png" alt="EDUCATION image">
+                </div>
+                <div class="card-title">
+                    <h2>EDUCATION & TRAINING</h2>
+                </div>
+                <div class="card-desc">
+                    <ol>
+                        <li>
+                            <strong>Web Design & Development</strong><span class="line-br"></span>
+                            2019-2021<span class="line-br"></span>
+                            W3school<span class="line-br"></span>
+                            Online Study Platform<span class="line-br"></span>
+                            <a href="https://www.w3schools.com/" target="blank">https://www.w3schools.com/</a><span class="line-br"></span>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Game Animation Development</strong><span class="line-br"></span>
+                            2018-2019<span class="line-br"></span>
+                            Govt Mobile Game & Apps Development<span class="line-br"></span>
+                            Batch-L2B43,Gopalganj<span class="line-br"></span>
+                            <a href="https://www.hitechanimation.com/" target="blank">https://www.hitechanimation.com/</a><span class="line-br"></span>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Diploma in Computer Engneering</strong><span class="line-br"></span>
+                            2018-2022<span class="line-br"></span>
+                            Gopalganj Polytechnic Institute<span class="line-br"></span>
+                            Gopalganj Sadar,Gopalganj<span class="line-br"></span>
+                            <a href="https://gopalganj-polytechnic-institute.business.site/" target="blank">https://gopalganj-polytechnic-institute.business.site/</a><span class="line-br"></span>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>SSC</strong><span class="line-br"></span>
+                            2016-2018<span class="line-br"></span>
+                            Pangsha George Govt. High School<span class="line-br"></span>
+                            Pangsha,Rajbari<span class="line-br"></span>
+                            <a href="https://www.sohopathi.com/pangsha-george-pilot-high-school/" target="blank">https://www.sohopathi.com/pangsha-george-pilot-high-school/</a><span class="line-br"></span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="skills col-4">
+            <div class="card">
+                <div class="card-icon">
+                    <img class="rounded-img" src="skills.png" alt="SKILLS image">
+                </div>
+                <div class="card-title">
+                    <h2>SKILLS</h2>
+                </div>
+                <div class="card-desc">
+                    <div class="skills-container">
+                        <ul>
+                            <li class="html">HTML</li>
+                            <li class="css">CSS</li>
+                            <li class="bts">BOOTSTRAP</li>
+                            <li class="js">JAVASCRIPT</li>
+                            <li class="jquery">JQUERY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Professional experience end -->
+    <!-- contact me page start -->
+    <div class="contact-page div-clear">
+        <div class="achievment col-4">
+            <h2>ACHIEVEMENTS</h2>
+            <div class="allDot">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>1. 100% Tuition waiver: Based on excelent academic result in GPI.</p>
+            <p>2. Game Animation & Development Complete by Batch L2b43.</p>
+            <p>3. Certified on Web Design & Development By LEDP Bangladesh and achieved A+ Grade.</p>
+            <p>4. Certified on Digital Marketing By LEDP Bangladesh and achieved A+ Grade.</p>
+        </div>
+        <div class="contact-me col-4" id="contact-me">
+            <h2>CONTACT ME</h2>
+            <div class="allDot">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <form action="mailto:mmoon8745@gmail.com" method="post" enctype="text/plain">
+                <p><input type="text" placeholder="Your Name" name="Name:"></p>
+                <p><input type="emial" placeholder="Your Email" name="Email"></p>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your message here"></textarea>
+                <button style="background-color: green;" type="submit">SEND</button>
+                <button style="background-color: red;" type="reset">RESET</button>
+            </form>
+        </div>
+        <div class="contact-links col-4">
+            <h2>More Ways To Contact </h2>
+            <div class="allDot">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="media-btn">
+                <button class="btn" onclick="window.open('https://www.youtube.com/channel/UC86reznLFtwXv0k4VLgAcaA')" class="request-callback"><i class="fa fa-youtube-play" aria-hidden="true" style="color: #FF0000;"></i></button>
+                <button class="btn" onclick="window.open('https://www.facebook.com/people/Mahmud-Moon/100012588226345/')" class="request-callback"><i class="fa fa-facebook" aria-hidden="true" style="color: #4267B2;"></i></button>
+                <button class="btn" onclick="window.open('https://twitter.com/aothym')" class="request-callback"><i class="fa fa-twitter" aria-hidden="true" style="color: #1DA1F2;"></i></button>
+                <button class="btn" onclick="window.open('https://www.instagram.com/mahmud_moon59/')" class="request-callback"><i class="fa fa-instagram" aria-hidden="true" style="color: #bc2a8d;"></i></button>
+                <button class="btn" onclick="window.open('https://www.linkedin.com/in/mahmud-moon-655b441b0/')" class="request-callback"><i class="fa fa-linkedin" aria-hidden="true" style="color:  #0e76a8;"></i></button>
+                <button class="btn" onclick="window.open('https://github.com/aothymoon59')" class="request-callback"><i class="fa fa-github-alt" aria-hidden="true" style="color: #4078c0 ;"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- contact me page  end-->
+    <!-- footer section start-->
+    <div class="footer div-clear">
+        <div class="footer-menu col-6">
+            <a href="#profile">Home</a>
+            <a href="#about-me">About Me</a>
+            <a href="#skill">Skill</a>
+            <a href="#contact-me">Contact Me</a>
+        </div>
+        <div class="footer-copyright col-6">
+            Developed by <strong>Mahmud Moon</strong> © 2021 All rights reserved</p>
+        </div>
+    </div>
+    <!-- footer section end-->
+</body>
+
+</html>
